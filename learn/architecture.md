@@ -1,123 +1,89 @@
-# Description and architecture
+# Descripción y arquitectura
 
-Codex is building a durable data storage engine that is fully decentralised, providing corruption and censorship resistance to web3 applications. It innately protects network participants by giving hosts plausible deniability over the data they store, and clients provable durability guarantees—up to 99.99%—while remaining storage and bandwidth efficient.
+Codex está construyendo un motor de almacenamiento de datos duradero que es completamente descentralizado, proporcionando resistencia a la corrupción y censura para aplicaciones web3. Protege de forma innata a los participantes de la red dando a los hosts negación plausible sobre los datos que almacenan, y a los clientes garantías de durabilidad comprobables—hasta 99.99%—mientras mantiene la eficiencia en almacenamiento y ancho de banda.
 
-These four key features combine to differentiate Codex from existing projects in the decentralised storage niche:
+Estas cuatro características clave se combinan para diferenciar a Codex de proyectos existentes en el nicho de almacenamiento descentralizado:
 
-- **Erasure coding:** Provides efficient data redundancy, which increases data durability guarantees.
+- **Codificación de borrado:** Proporciona redundancia de datos eficiente, lo que aumenta las garantías de durabilidad de datos.
 
-- **ZK-based proof-of-retrievability:** For lightweight data durability assurances.
+- **Prueba de recuperabilidad basada en ZK:** Para garantías ligeras de durabilidad de datos.
 
-- **Lazy repair mechanism:** For efficient data reconstruction and loss prevention.
+- **Mecanismo de reparación perezosa:** Para reconstrucción eficiente de datos y prevención de pérdidas.
 
-- **Incentivization:**  To encourage rational behaviour, widespread network participation, and the efficient provision of finite network resources.
-
-
-### Incentivized decentralisation
-
-Incentivization mechanisms are one of the key pieces missing from traditional file-sharing networks. Codex believes that a robust marketplace-based incentive structure will ensure wide participation across the node types detailed below.
-
-The development of an adequate incentive structure is driven by the following goals: 
-
-- Supply and demand to encourage optimum network resource usage.
-
-- Increase participation by enabling nodes to utilise their competitive advantages to maximise profits.
-
-- Prevent spam and discourage malicious participation. 
-
-Although still to be finalised, the Codex incentive structure will involve a marketplace of participants who want to store data, and those provisioning storage posting collateral, with the latter bidding on open storage contracts. This structure aims to ensure that participants' incentives align, resulting in Codex functioning as intended.
+- **Incentivación:** Para fomentar el comportamiento racional, la participación generalizada en la red y la provisión eficiente de recursos finitos de la red.
 
 
-### Network architecture
+### Descentralización incentivada
 
-Codex is composed of multiple node types, each taking a different role in the network's operation. Similarly, the hardware demands for each node type vary, enabling those operating resource-restricted devices to participate.
+Los mecanismos de incentivación son una de las piezas clave que faltan en las redes tradicionales de compartición de archivos. Codex cree que una estructura de incentivos robusta basada en el mercado asegurará una amplia participación entre los tipos de nodos detallados a continuación.
 
-**Storage nodes**
+El desarrollo de una estructura de incentivos adecuada está impulsado por los siguientes objetivos:
 
-As Codex's long-term reliable storage providers, storage nodes stake collateral based on the collateral posted on the request side of contracts, and the number of slots that a contract has. This is tied to the durability demanded by the user. Failure to provide periodic proof of data possession results in slashing penalties.
+- Oferta y demanda para fomentar el uso óptimo de los recursos de la red.
 
-**Aggregator Node**
+- Aumentar la participación permitiendo que los nodos utilicen sus ventajas competitivas para maximizar beneficios.
 
-A method for off-loading erasure coding, proof generation and proof aggregation by a client node with low-resources, currently a WIP and will be part of subsequent Codex release Q2/Q4 next year.
+- Prevenir el spam y desalentar la participación maliciosa.
 
-**Client nodes**
-
-Client nodes make requests for other nodes to store, find, and retrieve data. Most of the Codex network will be Client nodes, and these participants can double as caching nodes to offset the cost of the network resources they consume. 
-
-When a node commits to a storage contract and a user uploads data, the network will proactively verify that the storage node is online and that the data is retrievable. Storage nodes are then randomly queried to broadcast proofs of data possession over an interval corresponding to the contract duration and 9's of retrievability guarantee the protocol provides.
-
-If the storage node sends invalid proofs or fails to provide them in time, the network evicts the storage node from the slot, and the slot will become available for the first node that generates a valid proof for that slot. 
-
-When the contract is reposted, some of the faulty node's collateral pays for the new storage node's bandwidth fees. Erasure coding complements the repair scheme by allowing the reconstruction of the missing chunks from data in other slots within the same storage contract hosted by faultless storage nodes.
+Aunque aún está por finalizar, la estructura de incentivos de Codex involucrará un mercado de participantes que quieren almacenar datos, y aquellos que proveen almacenamiento publicando garantías, con estos últimos pujando por contratos de almacenamiento abiertos. Esta estructura busca asegurar que los incentivos de los participantes estén alineados, resultando en que Codex funcione según lo previsto.
 
 
-![architect](/learn/architecture.png)
+### Arquitectura de la red
 
-### Marketplace architecture ###
+Codex está compuesto por múltiples tipos de nodos, cada uno tomando un rol diferente en la operación de la red. De manera similar, las demandas de hardware para cada tipo de nodo varían, permitiendo que aquellos que operan dispositivos con recursos restringidos participen.
 
-The marketplace consists of a smart contract that is deployed on-chain, and the
-purchasing and sales modules that are part of the node software. The purchasing
-module is responsible for posting storage requests to the smart contract. The
-sales module is its counterpart that storage providers use to determine which
-storage requests they are interested in.
+**Nodos de almacenamiento**
 
-#### Smart contract ####
+Como proveedores de almacenamiento confiable a largo plazo de Codex, los nodos de almacenamiento depositan garantías basadas en las garantías publicadas en el lado de la solicitud de contratos, y el número de slots que tiene un contrato. Esto está vinculado a la durabilidad demandada por el usuario. El incumplimiento en proporcionar prueba periódica de posesión de datos resulta en penalizaciones de recorte.
 
-The smart contract facilitates matching between storage providers and storage
-clients. A storage client can request a certain amount of storage for a certain
-duration. This request is then posted on-chain, so that storage providers can
-see it, and decide whether they want to fill a slot in the request.
+**Nodo Agregador**
 
-The main parameters of a storage request are:
-- the amount of bytes of storage that is requested
-- a content identifier (CID) of the data that should be stored
-- the duration for which the data should be stored
-- the number of slots (based on the erasure coding parameters)
-- an amount of tokens to pay for the storage
+Un método para descargar la codificación de borrado, generación de pruebas y agregación de pruebas por un nodo cliente con bajos recursos, actualmente en desarrollo y será parte del siguiente lanzamiento de Codex Q2/Q4 del próximo año.
 
-At the protocol level a storage client is free to determine these parameters as
-it sees fit, so that it can choose a level of durability that is suitable for
-the data, and adjust for changing storage prices. Applications built on Codex
-can provide guidance to their users for picking the correct parameters,
-analogous to how Ethereum wallets help with determining gas fees.
+**Nodos cliente**
 
-The smart contract also checks that storage providers keep their promises.
-Storage providers post collateral when they promise to fill a slot of a storage
-request. They are expected to post periodic storage proofs to the contract,
-either directly or through an aggregator. If they fail to do so repeatedly, then
-their collateral can be forfeited. Their slot is then awarded to another storage
-provider.
+Los nodos cliente hacen solicitudes para que otros nodos almacenen, encuentren y recuperen datos. La mayoría de la red Codex serán nodos Cliente, y estos participantes pueden funcionar como nodos de caché para compensar el costo de los recursos de red que consumen.
 
-The smart contract indicates when a certain storage provider has to provide a
-storage proof. This is not done on a fixed time interval, but determined
-stochastically to ensure that it is not possible for a storage provider to
-predict when it should provide the next storage proof.
+Cuando un nodo se compromete con un contrato de almacenamiento y un usuario sube datos, la red verificará proactivamente que el nodo de almacenamiento esté en línea y que los datos sean recuperables. Los nodos de almacenamiento son entonces consultados aleatoriamente para transmitir pruebas de posesión de datos sobre un intervalo correspondiente a la duración del contrato y 9's de garantía de recuperabilidad que proporciona el protocolo.
 
-#### Purchasing ####
+Si el nodo de almacenamiento envía pruebas inválidas o falla en proporcionarlas a tiempo, la red expulsa al nodo de almacenamiento del slot, y el slot estará disponible para el primer nodo que genere una prueba válida para ese slot.
 
-The purchasing module in the node software interacts with the smart contract on
-behalf of the node operator. It posts storage requests, and handles any other
-interactions that are required during the lifetime of the request. For instance,
-when a request is canceled because there are not enough interested storage
-providers, then the purchasing module can withdraw the tokens that were
-associated with the request.
+Cuando el contrato se vuelve a publicar, parte de la garantía del nodo defectuoso paga las tarifas de ancho de banda del nuevo nodo de almacenamiento. La codificación de borrado complementa el esquema de reparación permitiendo la reconstrucción de los fragmentos faltantes a partir de datos en otros slots dentro del mismo contrato de almacenamiento alojado por nodos sin fallas.
 
-#### Sales ####
 
-The sales module is the counterpart to the sales module. It monitors the smart
-contract to be notified of incoming storage requests. It keeps a list of the
-most promising requests that it can fulfill. It will favor those requests that
-have a high reward and low collateral. As soon as it finds a suitable request,
-it will then try to first reserve and then fill a slot by downloading the
-associated data, creating a storage proof, and posting it to the smart contract.
-It will then continue to monitor the smart contract to provide it with storage
-proofs when they are required.
+![arquitectura](/learn/architecture.png)
 
-The sales module contains a best effort strategy for determining which storage
-requests it is interested in. Over time, we expect more specialized strategies
-to emerge to cater to the needs of e.g. large providers versus providers that
-run a node from their home.
+### Arquitectura del mercado ###
 
-### Whitepaper ###
+El mercado consiste en un contrato inteligente que se despliega en la cadena, y los módulos de compra y venta que son parte del software del nodo. El módulo de compra es responsable de publicar solicitudes de almacenamiento en el contrato inteligente. El módulo de ventas es su contraparte que los proveedores de almacenamiento usan para determinar en qué solicitudes de almacenamiento están interesados.
 
-Read the [Codex whitepaper](/learn/whitepaper)
+#### Contrato inteligente ####
+
+El contrato inteligente facilita el emparejamiento entre proveedores de almacenamiento y clientes de almacenamiento. Un cliente de almacenamiento puede solicitar una cierta cantidad de almacenamiento por una cierta duración. Esta solicitud se publica entonces en la cadena, para que los proveedores de almacenamiento puedan verla y decidir si quieren llenar un slot en la solicitud.
+
+Los principales parámetros de una solicitud de almacenamiento son:
+- la cantidad de bytes de almacenamiento solicitados
+- un identificador de contenido (CID) de los datos que deben almacenarse
+- la duración durante la cual los datos deben almacenarse
+- el número de slots (basado en los parámetros de codificación de borrado)
+- una cantidad de tokens para pagar por el almacenamiento
+
+A nivel de protocolo, un cliente de almacenamiento es libre de determinar estos parámetros como considere conveniente, para que pueda elegir un nivel de durabilidad que sea adecuado para los datos y ajustarse a los precios cambiantes del almacenamiento. Las aplicaciones construidas sobre Codex pueden proporcionar orientación a sus usuarios para elegir los parámetros correctos, análogo a cómo las carteras de Ethereum ayudan a determinar las tarifas de gas.
+
+El contrato inteligente también verifica que los proveedores de almacenamiento mantengan sus promesas. Los proveedores de almacenamiento publican garantías cuando prometen llenar un slot de una solicitud de almacenamiento. Se espera que publiquen pruebas de almacenamiento periódicas al contrato, ya sea directamente o a través de un agregador. Si fallan en hacerlo repetidamente, entonces su garantía puede ser confiscada. Su slot se otorga entonces a otro proveedor de almacenamiento.
+
+El contrato inteligente indica cuándo un determinado proveedor de almacenamiento debe proporcionar una prueba de almacenamiento. Esto no se hace en un intervalo de tiempo fijo, sino que se determina estocásticamente para asegurar que no sea posible que un proveedor de almacenamiento prediga cuándo debe proporcionar la siguiente prueba de almacenamiento.
+
+#### Compras ####
+
+El módulo de compra en el software del nodo interactúa con el contrato inteligente en nombre del operador del nodo. Publica solicitudes de almacenamiento y maneja cualquier otra interacción que se requiera durante la vida útil de la solicitud. Por ejemplo, cuando una solicitud se cancela porque no hay suficientes proveedores de almacenamiento interesados, entonces el módulo de compra puede retirar los tokens que estaban asociados con la solicitud.
+
+#### Ventas ####
+
+El módulo de ventas es la contraparte del módulo de ventas. Monitorea el contrato inteligente para ser notificado de las solicitudes de almacenamiento entrantes. Mantiene una lista de las solicitudes más prometedoras que puede cumplir. Favorecerá aquellas solicitudes que tengan una alta recompensa y baja garantía. Tan pronto como encuentra una solicitud adecuada, intentará primero reservar y luego llenar un slot descargando los datos asociados, creando una prueba de almacenamiento y publicándola en el contrato inteligente. Luego continuará monitoreando el contrato inteligente para proporcionarle pruebas de almacenamiento cuando sean requeridas.
+
+El módulo de ventas contiene una estrategia de mejor esfuerzo para determinar en qué solicitudes de almacenamiento está interesado. Con el tiempo, esperamos que surjan estrategias más especializadas para atender las necesidades de, por ejemplo, grandes proveedores versus proveedores que ejecutan un nodo desde su casa.
+
+### Libro Blanco ###
+
+Lee el [libro blanco de Codex](/learn/whitepaper)

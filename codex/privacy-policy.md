@@ -1,72 +1,72 @@
 ---
 lastUpdated: false
 ---
-# Privacy Policy
+# Política de Privacidad
 
-Last updated: 9 February 2024
+Última actualización: 9 de febrero de 2024
 
-This Privacy Policy is intended to inform users of our approach to privacy in respect of this website (**"Website"**). In this regard, if you are visiting our Website, this Privacy Policy applies to you.
+Esta Política de Privacidad tiene como objetivo informar a los usuarios sobre nuestro enfoque de privacidad con respecto a este sitio web ("**Sitio Web**"). En este sentido, si está visitando nuestro Sitio Web, esta Política de Privacidad se aplica a usted.
 
-### 1) Who we are
+### 1) Quiénes somos
 
-For the purposes of this Privacy Policy and the collection and processing of personal data as a controller, the relevant entity is the Logos Collective Association, which has its registered office in Zug and its legal domicile address at
+Para los propósitos de esta Política de Privacidad y la recopilación y procesamiento de datos personales como controlador, la entidad relevante es la Asociación Logos Collective, que tiene su oficina registrada en Zug y su domicilio legal en:
 
 ```
 Logos Collective Association
 c/o PST Consulting GmbH
 Baarerstrasse 10
 6300 Zug
-Switzerland
+Suiza
 ```
 
-Whenever we refer to “Logos”, “we” or other similar references, we are referring to the Logos Collective Association.
+Cuando nos referimos a "Logos", "nosotros" u otras referencias similares, nos referimos a la Asociación Logos Collective.
 
-### 2) We limit the collection and processing of personal data from your use of the Website
+### 2) Limitamos la recopilación y procesamiento de datos personales de su uso del Sitio Web
 
-We aim to limit the collection and collection and processing of personal data from users of the Website. We only collect and process certain personal data for specific purposes and where we have the legal basis to do so under applicable privacy legislation. We will not collect or process any personal data that we don’t need and where we do store any personal data, we will only store it for the least amount of time needed for the indicated purpose.
+Nos propósitos es limitar la recopilación y procesamiento de datos personales de los usuarios del Sitio Web. Solo recopilamos y procesamos ciertos datos personales para propósitos específicos y donde tenemos la base legal para hacerlo bajo la legislación de privacidad aplicable. No recopilamos ni procesamos ningún dato personal que no necesitemos y donde almacenemos cualquier dato personal, solo lo almacenaremos durante la cantidad de tiempo mínima necesaria para el propósito indicado.
 
-In this regard, we collect and process the following personal data from your use of the Website:
+En este sentido, recopilamos y procesamos los siguientes datos personales de su uso del Sitio Web:
 
-* **IP address**: As part of such use of the Website, we briefly process your IP address but we have no way of identifying you. We however have a legitimate interest in processing such IP addresses to ensure the technical functionality and enhance the security measures of the Website. This IP address is not stored by us over time.
+* **IP address**: Como parte de dicho uso del Sitio Web, procesamos temporalmente su IP address pero no tenemos forma de identificarle. Sin embargo, tenemos un interés legítimo en procesar dichos IP addresses para garantizar la funcionalidad técnica y mejorar las medidas de seguridad del Sitio Web. Este IP address no se almacena por nosotros a lo largo del tiempo.
 
-### 3) Third party processing of personal data
+### 3) Procesamiento de datos personales por terceros
 
-In addition to our limited and collection of personal data, third parties may collect or process personal data as a result of the Website making use of certain features or to provide certain content. To the extent you interact with such third party content or features, their respective privacy policies will apply.
+Además de nuestra recopilación limitada y procesamiento de datos personales, los terceros pueden recoger o procesar datos personales como resultado del Sitio Web utilizando ciertas características o para proporcionar ciertos contenidos. Si interactúa con dichos contenidos o características de terceros, se aplicará la respectiva política de privacidad de dichos terceros.
 
-### 4) Security measures we take in respect of the Website
+### 4) Medidas de seguridad que tomamos en relación con el Sitio Web
 
-As a general approach, we take data security seriously and we have implemented a variety of security measures on the Website to maintain the safety of your personal data when you submit such information to us.
+Como enfoque general, tomamos la seguridad de los datos en serio y hemos implementado una variedad de medidas de seguridad en el Sitio Web para mantener la seguridad de sus datos personales cuando presente dicha información a nosotros.
 
-### 5) Exporting data outside the European Union and Switzerland
+### 5) Exportación de datos fuera de la Unión Europea y Suiza
 
-We are obliged to protect the privacy of personal data that you may have submitted in the unlikely event that we export your personal data to places outside the European Union or Switzerland. This means that personal data will only be processed in countries or by parties that provide an adequate level of protection as deemed by Switzerland or the European Commission. Otherwise, we will use other forms of protections, such as specific forms of contractual clauses to ensure such personal data is provided the same protection as required in Switzerland or Europe. In any event, the transmission of personal data outside the European Union and Switzerland will always occur in conformity with applicable privacy legislation. 
+Estamos obligados a proteger la privacidad de los datos personales que haya enviado en el improbable caso de que exportemos sus datos personales a lugares fuera de la Unión Europea o Suiza. Esto significa que los datos personales solo se procesarán en países o por partes que proporcionen un nivel adecuado de protección como lo considere Suiza o la Comisión Europea. De lo contrario, usaremos otras formas de protecciones, como formas contractuales específicas para garantizar que dichos datos personales reciban la misma protección que se requiere en Suiza o Europa. En cualquier caso, la transmisión de datos personales fuera de la Unión Europea y Suiza siempre tendrá lugar en conformidad con la legislación de privacidad aplicable. 
 
-### 6) Your choices and rights
+### 6) Sus opciones y derechos
 
-As explained in this Privacy Policy, we limit our collection and processing of your personal data wherever possible. Nonetheless, you still have certain choices and rights in respect of the personal data which we do collect and process. As laid out in relevant privacy legislation, you have the right to:
+Como se explica en esta Política de Privacidad, limitamos nuestra recopilación y procesamiento de sus datos personales siempre que sea posible. Sin embargo, todavía tiene ciertas opciones y derechos en relación con los datos personales que recopilamos y procesamos. Conforme a la legislación de privacidad aplicable, tiene el derecho de:
 
-* Ask us to correct or update your personal data (where reasonably possible);
+* Solicitarle a nosotros que corrija o actualice sus datos personales (si es posible de manera razonable);
 
-* Ask us to remove your personal data from our systems;
+* Solicitarle a nosotros que elimine sus datos personales de nuestros sistemas;
 
-* Ask us for a copy of your personal data, which may also be transferred to another data controller at your request;
+* Solicitarle a nosotros una copia de sus datos personales, que también puede transferirse a otro controlador de datos en su solicitud;
 
-* Withdraw your consent to process your personal data (only if consent was asked for a processing activity), which only affects processing activities that are based on your consent and doesn’t affect the validity of such processing activities before you have withdrawn your consent;
+* Revocar su consentimiento para procesar sus datos personales (solo si se solicitó consentimiento para una actividad de procesamiento), que solo afecta las actividades de procesamiento basadas en su consentimiento y no afecta la validez de dichas actividades de procesamiento antes de que haya revocado su consentimiento;
 
-* Object to the processing of your personal data; and
+* Objeto al procesamiento de sus datos personales; y
 
-* File a complaint with the Federal Data Protection and Information Commissioner (FDPIC), if you believe that your personal data has been processed unlawfully.
+* Presentar una queja con el Comisionado Federal de Protección de Datos e Información (FDPIC), si cree que sus datos personales se han procesado ilegalmente.
 
-### 7) Third party links
+### 7) Enlaces a terceros
 
-On this Website, you may come across links to third party websites. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these third party websites.
+En este Sitio Web, puede encontrarse con enlaces a sitios web de terceros. Estos sitios web de terceros tienen políticas de privacidad independientes y separadas. Por lo tanto, no tenemos responsabilidad o responsabilidad por el contenido y actividades de estos sitios web de terceros.
 
-### 8) This Privacy Policy might change
+### 8) Esta Política de Privacidad puede cambiar
 
-We may modify or replace any part of this Privacy Policy at any time and without notice. Please check the Website periodically for any changes. The new Privacy Policy will be effective immediately upon its posting on our Website.
+Podemos modificar o reemplazar cualquier parte de esta Política de Privacidad en cualquier momento y sin previo aviso. Por favor, compruebe periódicamente el Sitio Web para cualquier cambio. La nueva Política de Privacidad entrará en vigor inmediatamente al momento de su publicación en nuestro Sitio Web.
 
-### 9) Contact information
+### 9) Información de contacto
 
-To the extent that you have any questions about the Privacy Policy, please contact us at <a href="mailto:legal@free.technology">legal@free.technology</a>.
+Para cualquier pregunta sobre la Política de Privacidad, por favor contáctenos en <a href="mailto:legal@free.technology">legal@free.technology</a>.
 
-This document is licensed under CC-BY-SA.
+Este documento está licenciado bajo CC-BY-SA.
