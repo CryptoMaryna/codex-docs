@@ -1,5 +1,3 @@
-# Disclaimer
+# 면책 조항
 
-The code and instructions provided within this repository and related repositories are provided “as-is”, without warranty of any kind, express or implied, including but not limited to the safety or correctness, or performance of the code or instructions provided. We make no assurance that the code will work as intended, and users may experience delays, failures, errors, omissions or loss of transmitted information whilst using or running Codex.
-
-Running Codex is done at your own risk. As such, we are not responsible nor liable for any damage that may occur to your hardware, software, data, or network, or for any loss, claim, damage of whatever nature, or other liability arising from or in connection with the use of the provided code and instructions.
+Codex의 실행은 귀하의 책임 하에 이루어집니다. 따라서 당사는 귀하의 하드웨어, 소프트웨어, 데이터 또는 네트워크에 발생할 수 있는 어떠한 손상이나, 제공된 코드와 지침의 사용과 관련하여 발생하는 손실, 청구, 어떠한 성격의 손해 또는 기타 책임에 대해 책임지지 않으며 의무를 지지 않습니다.

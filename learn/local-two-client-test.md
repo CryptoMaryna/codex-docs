@@ -1,6 +1,6 @@
-# Codex Two-Client Test
+# Codex 두 클라이언트 테스트
 
-The two-client test is a manual test you can perform to check your setup and familiarize yourself with the Codex API. These steps will guide you through running and connecting two nodes, in order to upload a file to one and then download that file from the other. This test also includes running a local blockchain node in order to have the Marketplace functionality available. However, running a local blockchain node is not strictly necessary, and you can skip steps marked as optional if you choose not start a local blockchain node.
+두 클라이언트 테스트는 설정을 확인하고 Codex API에 익숙해지기 위해 수행할 수 있는 수동 테스트입니다. 이 단계들은 두 개의 노드를 실행하고 연결하여 하나에 파일을 업로드한 다음 다른 노드에서 해당 파일을 다운로드하는 과정을 안내합니다. 이 테스트에는 마켓플레이스 기능을 사용할 수 있도록 로컬 블록체인 노드를 실행하는 것도 포함됩니다.
 
 ## Prerequisite
 
@@ -215,6 +215,17 @@ If your file is downloaded and identical to the file you uploaded, then this man
 
 When using the Ganache blockchain, there are some deviations from the expected behavior, mainly linked to how blocks are mined, which affects certain functionalities in the Sales module.
 Therefore, if you are manually testing processes such as payout collection after a request is finished or proof submissions, you need to mine some blocks manually for it to work correctly. You can do this by using the following curl command:
+
+```shell
+curl -X POST \
+  127.0.0.1:8545 \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","method":"evm_mine","params":[],"id":67}'
+```
+
+## 알려진 문제점
+
+요청이 완료된 후 지불금 수집이나 증명 제출과 같은 프로세스를 수동으로 테스트하는 경우, 제대로 작동하려면 수동으로 블록을 채굴해야 합니다. 다음 curl 명령을 사용하여 이 작업을 수행할 수 있습니다:
 
 ```shell
 curl -X POST \

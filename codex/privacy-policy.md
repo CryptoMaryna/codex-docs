@@ -1,11 +1,11 @@
 ---
 lastUpdated: false
 ---
-# Privacy Policy
+# 개인정보 처리방침
 
-Last updated: 9 February 2024
+최종 업데이트: 2024년 2월 9일
 
-This Privacy Policy is intended to inform users of our approach to privacy in respect of this website (**"Website"**). In this regard, if you are visiting our Website, this Privacy Policy applies to you.
+본 개인정보 처리방침은 이 웹사이트("**웹사이트**")와 관련하여 사용자에게 당사의 개인정보 보호 접근 방식을 알리기 위한 것입니다. 이와 관련하여, 귀하가 당사의 웹사이트를 방문하는 경우 본 개인정보 처리방침이 적용됩니다.
 
 ### 1) Who we are
 
@@ -19,11 +19,11 @@ Baarerstrasse 10
 Switzerland
 ```
 
-Whenever we refer to “Logos”, “we” or other similar references, we are referring to the Logos Collective Association.
+Whenever we refer to "Logos", "we" or other similar references, we are referring to the Logos Collective Association.
 
 ### 2) We limit the collection and processing of personal data from your use of the Website
 
-We aim to limit the collection and collection and processing of personal data from users of the Website. We only collect and process certain personal data for specific purposes and where we have the legal basis to do so under applicable privacy legislation. We will not collect or process any personal data that we don’t need and where we do store any personal data, we will only store it for the least amount of time needed for the indicated purpose.
+We aim to limit the collection and collection and processing of personal data from users of the Website. We only collect and process certain personal data for specific purposes and where we have the legal basis to do so under applicable privacy legislation. We will not collect or process any personal data that we don't need and where we do store any personal data, we will only store it for the least amount of time needed for the indicated purpose.
 
 In this regard, we collect and process the following personal data from your use of the Website:
 
@@ -51,7 +51,7 @@ As explained in this Privacy Policy, we limit our collection and processing of y
 
 * Ask us for a copy of your personal data, which may also be transferred to another data controller at your request;
 
-* Withdraw your consent to process your personal data (only if consent was asked for a processing activity), which only affects processing activities that are based on your consent and doesn’t affect the validity of such processing activities before you have withdrawn your consent;
+* Withdraw your consent to process your personal data (only if consent was asked for a processing activity), which only affects processing activities that are based on your consent and doesn't affect the validity of such processing activities before you have withdrawn your consent;
 
 * Object to the processing of your personal data; and
 

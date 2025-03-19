@@ -1,10 +1,10 @@
-# Quick Start
+# 빠른 시작
 
-To run Codex through this guide we would need to perform the following steps:
-- [Review the disclaimer](/codex/disclaimer)
-- [Get Codex binary](#get-codex-binary)
-- [Run Codex](#run-codex)
-- [Interact with Codex](#interact-with-codex)
+이 가이드를 통해 Codex를 실행하려면 다음 단계를 수행해야 합니다:
+- [면책 조항 검토](/codex/disclaimer)
+- [Codex 바이너리 얻기](#get-codex-binary)
+- [Codex 실행하기](#run-codex)
+- [Codex와 상호작용하기](#interact-with-codex)
 
 ## Get Codex binary
 

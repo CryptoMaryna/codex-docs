@@ -1,6 +1,6 @@
-# Description and architecture
+# 설명 및 아키텍처
 
-Codex is building a durable data storage engine that is fully decentralised, providing corruption and censorship resistance to web3 applications. It innately protects network participants by giving hosts plausible deniability over the data they store, and clients provable durability guarantees—up to 99.99%—while remaining storage and bandwidth efficient.
+Codex는 web3 애플리케이션에 부패 및 검열 저항성을 제공하는 완전히 분산된 내구성 있는 데이터 저장 엔진을 구축하고 있습니다. 노드 운영자에게는 저장하는 데이터에 대한 타당한 부인 가능성을, 클라이언트에게는 최대 99.99%의 입증 가능한 내구성 보장을 제공하면서도 저장소와 대역폭 효율성을 유지합니다.
 
 These four key features combine to differentiate Codex from existing projects in the decentralised storage niche:
 
@@ -118,6 +118,6 @@ requests it is interested in. Over time, we expect more specialized strategies
 to emerge to cater to the needs of e.g. large providers versus providers that
 run a node from their home.
 
-### Whitepaper ###
+### 백서 ###
 
-Read the [Codex whitepaper](/learn/whitepaper)
+[Codex 백서](/learn/whitepaper)를 읽어보세요.

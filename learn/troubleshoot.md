@@ -1,11 +1,11 @@
 ---
 outline: [2, 3]
 ---
-# Troubleshoot
+# 문제 해결
 
-Having trouble getting your Codex node connected to the testnet? Here's a list of common Codex connection conundrums and steps to diagnose and solve them. If your troubles are not addressed here, check our open issues on Github or reach out via our Discord server.
+테스트넷에 Codex 노드를 연결하는 데 문제가 있으신가요? 여기 일반적인 Codex 연결 문제와 이를 진단하고 해결하는 단계들을 모아놨습니다. 여기서 해결되지 않는 문제가 있다면, Github의 미해결 이슈를 확인하거나 Discord 서버를 통해 연락해 주세요.
 
-## Some basics
+## 기본 사항
 
 You've probably already considered these. But just in case:
 

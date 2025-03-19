@@ -1,13 +1,13 @@
 ---
 outline: [2, 3]
 ---
-# Using Codex
+# Codex 사용하기
 
-We can interact with Codex using [REST API](/developers/api). This document will show you several useful examples.
+[REST API](/developers/api)를 사용하여 Codex와 상호작용할 수 있습니다. 이 문서에서는 몇 가지 유용한 예제를 보여드리겠습니다.
 
-Also, we can check [Codex App UI](https://app.codex.storage).
+또한 [Codex App UI](https://app.codex.storage)를 확인할 수 있습니다.
 
-Command line interpreter on [Linux/macOS](#linux-macos) and [Windows](#windows) works slightly different, so please use steps for your OS.
+[Linux/macOS](#linux-macos)와 [Windows](#windows)의 명령줄 인터프리터는 약간 다르게 작동하므로 사용 중인 OS에 맞는 단계를 사용하세요.
 
 ## Linux/macOS
 

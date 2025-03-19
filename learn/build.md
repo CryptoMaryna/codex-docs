@@ -106,10 +106,6 @@ pacman -U --noconfirm \
   https://repo.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-gcc-libs-13.2.0-6-any.pkg.tar.zst
 ```
 
-<!-- #### Headless Windows container -->
-<!-- add instructions re: getting setup with MSYS2 in a Windows container -->
-<!-- https://github.com/StefanScherer/windows-docker-machine -->
-
 #### Optional: VSCode Terminal integration
 
 You can link the MSYS2-UCRT64 terminal into VSCode by modifying the configuration file as shown below.

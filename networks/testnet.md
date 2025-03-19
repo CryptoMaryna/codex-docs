@@ -1,9 +1,9 @@
 ---
 outline: [2, 4]
 ---
-# Codex Testnet
+# Codex 테스트넷
 
-The Codex Testnet has been launched and is ready to be used for testing.
+Codex 테스트넷이 출시되어 테스트에 사용할 준비가 되었습니다.
 
 Your participation in the Codex Testnet is subject to the [Codex Testnet Terms and Conditions](https://github.com/codex-storage/codex-testnet-starter/blob/master/Codex%20Testnet%20Terms%20and%20Conditions.pdf) and [Codex Testnet Privacy Policy](https://github.com/codex-storage/codex-testnet-starter/blob/master/Codex%20Testnet%20Privacy%20Policy.pdf).
 
@@ -21,6 +21,18 @@ The guides were tested on the following operating systems:
  - Linux: Ubuntu 24.04, Debian 12, Fedora 40
  - macOS: 15
  - Windows: 11, Server 2022
+
+## 테스트넷 정보
+
+| 항목 | 값 |
+| --- | --- |
+| 체인 ID | 2430 |
+| 통화 기호 | ETH |
+| 블록 시간 | 5초 |
+| 합의 | Clique PoA |
+| 네트워크 ID | 2430 |
+| 네트워크 이름 | Codex Testnet |
+| RPC URL | https://rpc.testnet.codex.storage |
 
 ## Running a Storage Client (Discord Version) {#sc-guide-discord}
 
@@ -201,3 +213,13 @@ enode://6ba0e8b5d968ca8eb2650dd984cdcf50acc01e4ea182350e990191aadd79897801b79455
 | 3 | Faucet ETH      | [faucet-eth.testnet.codex.storage](https://faucet-eth.testnet.codex.storage) |
 | 4 | Faucet TST      | [faucet-tst.testnet.codex.storage](https://faucet-tst.testnet.codex.storage) |
 | 5 | Status page     | [status.testnet.codex.storage](https://status.testnet.codex.storage)         |
+
+## 유용한 링크
+
+| # | 서비스          | URL                                                                        |
+| - | --------------- | ---------------------------------------------------------------------------- |
+| 1 | Geth 공개 RPC | [rpc.testnet.codex.storage](https://rpc.testnet.codex.storage)               |
+| 2 | 블록 탐색기    | [explorer.testnet.codex.storage](https://explorer.testnet.codex.storage)     |
+| 3 | ETH 수도꼭지    | [faucet-eth.testnet.codex.storage](https://faucet-eth.testnet.codex.storage) |
+| 4 | TST 수도꼭지    | [faucet-tst.testnet.codex.storage](https://faucet-tst.testnet.codex.storage) |
+| 5 | 상태 페이지     | [status.testnet.codex.storage](https://status.testnet.codex.storage)         |

@@ -1,8 +1,8 @@
-# Codex documentation
+# Codex 문서
 
- Welcome to Codex documentation.
+Codex 문서에 오신 것을 환영합니다.
 
- Codex is a decentralised data storage platform that provides exceptionally strong censorship resistance and durability guarantees.
+Codex는 매우 강력한 검열 저항성과 내구성 보장을 제공하는 분산형 데이터 저장 플랫폼입니다.
 
 
 ## Run and build
@@ -73,6 +73,6 @@
  - Make a PR to the upstream repository
 
  Project structure
- - `learn` - All information to learn about Codex
- - `networks` - Codex networks related information
- - `developers` - Codex development process and guides
+ - `learn` - Codex에 대해 배울 수 있는 모든 정보
+ - `networks` - Codex 네트워크 관련 정보
+ - `developers` - Codex 개발 프로세스 및 가이드
